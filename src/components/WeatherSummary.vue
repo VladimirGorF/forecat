@@ -1,6 +1,7 @@
 <script setup>
 // импортируем функцию Загл буквы из utils
 import { capitalaiseFirstLetter } from "../utils/index";
+
 // регистрируем пропс забинденный в верстке в App в тэге WeatherSummary
 const props = defineProps({
   weatherInfo: {
@@ -18,9 +19,9 @@ const today = new Date().toLocaleString("en-EN", {
 
 <template>
   <div class="summary">
-    <div
+      <div
       :style="`
-        background-image: url('/weather-main/${weatherInfo?.weather[0].description}.png');`"
+        background-image: url('/weather-main/rain.png');`"
       class="pic-main"
     ></div>
     <div class="weather">
